@@ -17,15 +17,16 @@ pollForm.addEventListener("submit", (event) => {
   }
 
   const pollResultsHTML = `
-    <h2></h2>
-    <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-    <p>The correct answer is .</p>
-  `;
+  <h2>${question}</h2>
+  <ul>
+    <li>${option1}</li>
+    <li>${option2}</li>
+    <li>${option3}</li>
+    <li>${option4}</li>
+  </ul>
+  <p>The correct answer is ${answer}.</p>
+`;
+
 
   pollResults.innerHTML = pollResultsHTML;
 });
